@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from torch import nn
 from transformers import BertModel, BertTokenizerFast, BertConfig
-from package.nn import ConditionalRandomField
+from package.crf import ConditionalRandomField
 
 import torch
 

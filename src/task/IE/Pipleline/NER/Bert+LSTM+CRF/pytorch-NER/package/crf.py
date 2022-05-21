@@ -50,7 +50,7 @@ class ConditionalRandomField(nn.Module):
         return f"{self.__class__.__name__}(num_tags={self.num_tags})"
 
     def neg_log_likelihood_loss(self, input: torch.Tensor, mask: Optional[torch.ByteTensor],
-                                target: torch.LongTensor, ) -> torch.Tensor:
+                                target: torch.LongTensor, reduction="sum") -> torch.Tensor:
         """Compute the conditional log likelihood of a sequence of tags given input scores.
         Args:
             input (`~torch.Tensor`): Emission score tensor of size
@@ -77,8 +77,9 @@ class ConditionalRandomField(nn.Module):
         # shape: (batch_size,)
         denominator = self._compute_normalizer(input, mask)
         # shape: (batch_size,)
-        llh = torch.sum(denominator - numerator)
-        return llh
+        if reduction == "mean":
+            return torch.mean(numerator - denominator)
+        return torch.sum(denominator - numerator)
 
     def forward(self, input: torch.Tensor, mask: Optional[torch.ByteTensor] = None) -> List[List[int]]:
         """Find the most likely tag sequence using Viterbi algorithm.
