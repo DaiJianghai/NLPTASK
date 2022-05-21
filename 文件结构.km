@@ -1,0 +1,342 @@
+{
+    "root": {
+        "data": {
+            "id": "cjxmhy8mhtc0",
+            "created": 1652342406179,
+            "text": "文件结构"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cjxmi3jelm80",
+                    "created": 1652342417715,
+                    "text": "wordembedding"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cjyo0jba4gw0",
+                            "created": 1652448243673,
+                            "text": "OOV"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cjyo0kqogig0",
+                                    "created": 1652448246781,
+                                    "text": "unk"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cjyo0n6r4gg0",
+                                    "created": 1652448252107,
+                                    "text": "subword level-fasttext"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cjyo2fert140",
+                            "created": 1652448391906,
+                            "text": "static",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cjxmi8xc8lk0",
+                                    "created": 1652342429441,
+                                    "text": "word2vec"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cjxmm20n8mg0",
+                                            "created": 1652342727860,
+                                            "text": "blog",
+                                            "hyperlink": "https://wmathor.com/index.php/archives/1430/",
+                                            "hyperlinkTitle": "wmathor",
+                                            "note": "损失函数：似然函数\n优化：目标是近似P(context|center)\n负采样：可以拓展到许多任务上,利用词频进行负采样\n层softmax：构造huffman树，根据词频"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cjxmmbi4ec00",
+                                            "created": 1652342748508,
+                                            "text": "code"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cjxmibrqkaw0",
+                                    "created": 1652342435633,
+                                    "text": "fasttext"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cjydfevoso00",
+                                            "created": 1652418377277,
+                                            "text": "blog",
+                                            "hyperlink": "https://wmathor.com/index.php/archives/1431/",
+                                            "hyperlinkTitle": "n-gram捕捉次序信息，负采样 层softmax优化，bucket节省空间"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cjydhp61kfs0",
+                                            "created": 1652418556399,
+                                            "text": "facebook fasttext",
+                                            "hyperlink": "https://blog.csdn.net/weixin_45707277/article/details/122794848",
+                                            "hyperlinkTitle": "用于文本分类，获得预训练词向量",
+                                            "note": "1. 文本分类\n2. 获取预训练词向量\n3. 训练词向量"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cjxmidqzc1c0",
+                                    "created": 1652342439941,
+                                    "text": "glove"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cjykfu5rklc0",
+                                            "created": 1652438158307,
+                                            "text": "blog",
+                                            "hyperlink": "https://zhuanlan.zhihu.com/p/42073620",
+                                            "hyperlinkTitle": "",
+                                            "note": "词共现矩阵->词贡献概率比值\n核心：用词向量表达共现概率比值"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cjykj45qryg0",
+                                            "created": 1652438415166,
+                                            "text": "stanford api",
+                                            "note": "分词\n清洗\n训练\n应用",
+                                            "hyperlink": "https://zhuanlan.zhihu.com/p/170292703",
+                                            "hyperlinkTitle": ""
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cjyo2i13n2w0",
+                            "created": 1652448397609,
+                            "text": "dynamic",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cjxmifjw7fk0",
+                                    "created": 1652342443866,
+                                    "text": "elmo"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cjyowal0w9c0",
+                                            "created": 1652450732325,
+                                            "text": "blog",
+                                            "hyperlink": "https://baijiahao.baidu.com/s?id=1647878529022615500&wfr=spider&for=pc",
+                                            "hyperlinkTitle": ""
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cjyox1u209s0",
+                                            "created": 1652450791644,
+                                            "text": "allennlp implementation ",
+                                            "hyperlink": "https://blog.csdn.net/weixin_41549308/article/details/124038715",
+                                            "hyperlinkTitle": ""
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cjyo2w235c80",
+                                    "created": 1652448428144,
+                                    "text": "bert"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cjyo2yfz4io0",
+                                    "created": 1652448433337,
+                                    "text": "gpt"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cjxmilo1vj40",
+                    "created": 1652342457178,
+                    "text": "task"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cjxmio86b400",
+                            "created": 1652342462748,
+                            "text": "textmatching"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cjxmirov4540",
+                                    "created": 1652342470287,
+                                    "text": "model"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cjxmiu5aevs0",
+                                            "created": 1652342475634,
+                                            "text": "paper"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cjxmivtl4wg0",
+                                            "created": 1652342479280,
+                                            "text": "code"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cjxmj8aqiww0",
+                            "created": 1652342506439,
+                            "text": "textclassification"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cjxmjkxe32o0",
+                            "created": 1652342533930,
+                            "text": "KGrelated",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cjxmjf3hqjs0",
+                                    "created": 1652342521238,
+                                    "text": "IE"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cjxmjgsoukw0",
+                                            "created": 1652342524938,
+                                            "text": "NER"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cjxmk3a4eqw0",
+                                                    "created": 1652342573882,
+                                                    "text": "model"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cjxmk6k7nog0",
+                                                            "created": 1652342581022,
+                                                            "text": "paper"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cjxmk91021k0",
+                                                            "created": 1652342586391,
+                                                            "text": "code"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cjxmjho9ps80",
+                                            "created": 1652342526848,
+                                            "text": "RE"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cjxmjsnmyy00",
+                                    "created": 1652342550754,
+                                    "text": "fusion?",
+                                    "layout_right_offset": {
+                                        "x": 0,
+                                        "y": 1
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cjxmk00hgrs0",
+                            "created": 1652342566769,
+                            "text": "LM"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cjxmj5agfuw0",
+                    "created": 1652342499891,
+                    "text": "topic"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
